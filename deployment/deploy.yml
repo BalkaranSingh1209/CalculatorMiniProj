@@ -6,5 +6,5 @@
   tasks:
     - name: Pull image
       docker_image:
-        name: balkaran/miniproj_calc:latest
+        name: balkaran/calcproj:latest
         source: pull
