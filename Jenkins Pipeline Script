@@ -13,24 +13,24 @@ pipeline{
                 sh 'mvn clean package'
             }
         }
-        stage('Step 3: Build Docker Image'){
-            steps {
-                script {
-                    docker_image = docker.build "balkaran1209/calculator_devops: latest"
+            stage('Step 3: Build Docker Image'){
+                steps {
+                    script {
+                        docker_image = docker.build "balkaran/calculator_devops:latest"
+                    }
+
                 }
-
             }
-        }
 
-        stage('Step 4: Push docker image to hub') {
-            steps {
-                script{
-                    docker.withRegistry('', 'docker') { 
-                        docker_image.push()
+            stage('Step 4: Push docker image to hub') {
+                steps {
+                    script{
+                        docker.withRegistry('', 'docker') {
+                            docker_image.push()
+                        }
                     }
                 }
             }
-        }
 
 
         stage('Step 5: Ansible Deployment'){
