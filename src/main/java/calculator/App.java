@@ -69,37 +69,41 @@ public class App {
 		}
 
 	public static double squareRoot(double num){
+		logger.info("[SQUARE ROOT] - " + num);
 		double c = Math.sqrt(num);
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		logger.info("Executing squareRoot function!");
+		logger.info("[RESULT - SQUARE ROOT] - " + c);
 		return c;
 	}
 
 	public static int factorial(int num){
+		logger.info("[FACTORIAL] - " + num);
 	    int c = num ;
 		for(int i=num-1; i>=1; i--) c = c*i;
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
-		logger.info("Executing Factorial function!");
+		logger.info("[RESULT - FACTORIAL] - " + c);
 		return c;
 	}
 	public static double naturalLog(double num){
+		logger.info("[NATURAL LOG] - " + num);
 		double c = Math.log(num);	
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
-		logger.info("Executing naturalLog function!");
+		logger.info("[RESULT - NATURAL LOG] - " + c);
 		return c;
 	}
 	  public static double power(double num, double exp){
+		logger.info("[POWER - " + num + " RAISED TO] " + exp);
 		double c = Math.pow(num,exp);
 		System.out.println("");
 		System.out.println("The Result is "+ c);
 		System.out.println("");
-		logger.info("Executing Power function!");
+		  logger.info("[RESULT - POWER] - " + c);
 		return c;
 	}
 
