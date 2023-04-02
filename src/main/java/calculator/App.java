@@ -85,6 +85,7 @@ public class App {
 		for(int i=num-1; i>=1; i--) c = c*i;
 		System.out.println("");
 		System.out.println("The Result is "+c);
+
 		System.out.println("");
 		logger.info("[RESULT - FACTORIAL] - " + c);
 		return c;
