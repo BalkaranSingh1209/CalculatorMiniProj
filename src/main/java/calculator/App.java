@@ -71,6 +71,7 @@ public class App {
 	public static double squareRoot(double num){
 		logger.info("[SQUARE ROOT] - " + num);
 		double c = Math.sqrt(num);
+
 		System.out.println("");
 		System.out.println("The Result is "+c);
 		System.out.println("");
